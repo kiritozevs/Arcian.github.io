@@ -1,11 +1,4 @@
 .block {
-   width: 23px;
-   height: 25px;
-   left: 98px;
-   top: 102px;
-   background-color: red;
-   opacity: 0;
-   position: absolute;
 }
 
 @keyframes box {
