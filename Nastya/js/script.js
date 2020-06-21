@@ -16,7 +16,7 @@ function open() {
    openI = 0;
    if (openNum == 0) {
       tеxtlogo.style.display = 'none';
-      arrow.style.transform = 'rotate(0deg)';
+      arrow.style.transform = 'rotate(180deg)';
       menu.style.width = '67px';
       openNum = 1;
       openI = 0;
@@ -31,7 +31,7 @@ function open() {
       });
    } else {
       tеxtlogo.style.display = 'block';
-      arrow.style.transform = 'rotate(180deg)';
+      arrow.style.transform = 'rotate(0deg)';
       menu.style.width = '201px';
       openNum = 0;
       openI = 0;
