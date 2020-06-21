@@ -293,4 +293,220 @@ body {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.block {
+  position: absolute;
+  right: 67px;
+  top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.block__slider {
+  background: #fefefe;
+  -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 21px;
+  padding: 26px;
+  max-width: 1088px;
+}
+
+.slider-block__complexity {
+  margin-left: 17px;
+  margin-bottom: 26px;
+}
+
+.slider-block__circle {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+}
+
+.slider-block__circle:nth-child(1) {
+  background-color: #ff934d;
+}
+
+.slider-block__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-block__img {
+  margin-right: 18px;
+}
+
+.slider-b-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider-b-body__title {
+  font-size: 43px;
+  line-height: 52px;
+  color: #000000;
+  border-bottom: 1px solid rgba(205, 204, 195, 0.56);
+  padding-bottom: 11px;
+  margin-bottom: 11px;
+}
+
+.slider-b-body__sub {
+  font-size: 23px;
+  line-height: 28px;
+  color: #6776ac;
+}
+
+.slider-b-body__show {
+  font-size: 23px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 13px;
+}
+
+.slider-b-body__example {
+  font-size: 17px;
+  line-height: 21px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+
+.slider-b-body__text {
+  font-size: 17px;
+  line-height: 21px;
+  color: #6776ac;
+}
+
+.slider-b-body__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.slider-b-body__get {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.slider-b-body__get span:nth-child(1) {
+  font-size: 23px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.slider-b-body__get span:nth-child(2) {
+  border: 1px solid #000000;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
+
+.slider-b-body__more {
+  font-size: 23px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.lvl-block {
+  background: #fefefe;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 41px;
+  padding-top: 2px;
+}
+
+.lvl-block__item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  font-size: 23px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.lvl-block__item:not(:last-child) {
+  border-right: 1px solid #000000;
+}
+
+.bar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 85px;
+}
+
+.bar-block__numone {
+  font-weight: 500;
+  font-size: 20.6px;
+  line-height: 25px;
+  color: #000000;
+}
+
+.bar-block__line {
+  height: 10px;
+  width: 100%;
+  background-color: #c4bd98;
+  border-radius: 20px;
+  position: relative;
+  margin: 0 9px;
+}
+
+.bar-block__line::before {
+  content: "";
+  width: 20%;
+  height: 100%;
+  background-color: #53588c;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+}
+
+.bar-block__numtwo {
+  font-weight: 500;
+  font-size: 20.6px;
+  line-height: 25px;
+  color: #000000;
 }
