@@ -1,14 +1,8 @@
 # Arcian.github.io
 Root Repository
 
-  [Сайт номер 1](Arcian.github.io/Lemon/ "А")- Lemon
-  
-  [Сайт номер 2](Arcian.github.io/tannergoods/ "B") - магазин напитков
-  
-  [Сайт номер 3](Arcian.github.io/Restourant/ "C") - сайт о еде
+  [Сайт номер 1](Arcian.github.io/tannergoods/ "B") - магазин напитков
    
-  [Сайт номер 3](Arcian.github.io/Surf/ "D") - Surf
+  [Сайт номер 2](Arcian.github.io/Surf/ "D") - Surf
 
-  [Сайт номер 4](Arcian.github.io/klava/ "D") - klava
-
-  [Сайт номер 5](Arcian.github.io/ChargerCustoms/ "D") - charger
+  [Сайт номер 3](Arcian.github.io/ChargerCustoms/ "D") - charger
