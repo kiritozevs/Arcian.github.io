@@ -1,3 +1,13 @@
+
+let mySwiper = new Swiper('.swiper-container', {
+   slidesPerView: 1,
+   loop: false,
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+})
+
 const arrow = document.querySelector('.openArrow');
 const menu = document.querySelector('.menu');
 const GoNon = document.querySelectorAll('.nav-menu__about');
@@ -6,10 +16,18 @@ const tеxtlogo = document.querySelector('.menu__tеxtlogo');
 const itemOn = document.querySelector('.opportunities-menu__item-on');
 const itemOff = document.querySelector('.opportunities-menu__item-off');
 const menuImage = document.querySelector('.opportunities-menu__image');
+const slides = document.querySelectorAll('.card');
+const numSlides = document.querySelector('.bar-block__numtwo');
+const lineBar = document.querySelector('.bar-block__linebar');
+
 
 let openNum = 1;
 let offOnNum = 0;
 let openI = 0;
+
+numSlides.textContent = slides.length;
+
+lineBar.style.width = `${100 / slides.length}%`
 
 function open() {
 
