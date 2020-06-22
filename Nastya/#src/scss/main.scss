@@ -1,0 +1,56 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import "utils/_null";
+@import "utils/_fonts";
+
+body {
+	background-color: lime;
+}
+
+// .menu {
+// 	width: 201px;
+// 	height: 100vh;
+// 	position: absolute;
+// 	left: 0;
+// 	top: 0;
+// 	background-color: #f4f1e0;
+// 	&__info {
+// 	}
+
+// 	&__logo {
+// 	}
+
+// 	&__logo-text {
+// 	}
+
+// 	&__nav {
+// 	}
+
+// 	&__opportunities {
+// 	}
+// }
+// .nav-menu {
+// 	&__item {
+// 	}
+
+// 	&__about {
+// 	}
+// }
+// .opportunities-menu {
+// 	&__item {
+// 	}
+
+// 	&__about {
+// 	}
+
+// 	&__item-open {
+// 	}
+// }
