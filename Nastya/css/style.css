@@ -409,6 +409,17 @@ body {
   margin-bottom: 11px;
 }
 
+.slider-b-body__title input {
+  font-size: 43px;
+  line-height: 52px;
+  color: rgba(0, 0, 0, 0.23);
+  max-width: 150px;
+  border: none;
+  background: #c4c4c4;
+  border-radius: 3px;
+  padding: 0px 9px 6px 8px;
+}
+
 .slider-b-body__sub {
   font-size: 23px;
   line-height: 28px;
