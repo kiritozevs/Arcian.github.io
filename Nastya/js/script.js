@@ -6,6 +6,7 @@ let mySwiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
    },
+   onlyExternal: true
 })
 
 const arrow = document.querySelector('.openArrow');
