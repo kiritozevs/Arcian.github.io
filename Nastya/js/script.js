@@ -19,15 +19,19 @@ const menuImage = document.querySelector('.opportunities-menu__image');
 const slides = document.querySelectorAll('.card');
 const numSlides = document.querySelector('.bar-block__numtwo');
 const lineBar = document.querySelector('.bar-block__linebar');
+const prev = document.querySelector('.swiper-button-prev');
+const next = document.querySelector('.swiper-button-next');
+
 
 
 let openNum = 1;
 let offOnNum = 0;
 let openI = 0;
+let lineBarWidth = 100 / slides.length;
 
 numSlides.textContent = slides.length;
 
-lineBar.style.width = `${100 / slides.length}%`
+lineBar.style.width = `${lineBarWidth}%`;
 
 function open() {
 
@@ -82,3 +86,11 @@ function offOn() {
 arrow.addEventListener('click', open);
 itemOff.addEventListener('click', offOn);
 itemOn.addEventListener('click', offOn);
+prev.addEventListener('click', () => {
+   let gggg = lineBar.style.width;
+   lineBar.style.width = `${Number(gggg.slice(0, -1)) - lineBarWidth}%`;
+});
+next.addEventListener('click', () => {
+   let gggg = lineBar.style.width;
+   lineBar.style.width = `${Number(gggg.slice(0, -1)) + lineBarWidth}%`;
+});
