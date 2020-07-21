@@ -135,6 +135,7 @@ h6 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 63.7%;
           flex: 1 1 63.7%;
+  margin-top: 10px;
 }
 
 .wrapper {
@@ -293,6 +294,7 @@ h6 {
   background-color: #252525;
   padding: 30px 0;
   position: relative;
+  border-radius: 10px;
 }
 
 .nav::before {
@@ -315,6 +317,8 @@ h6 {
   position: absolute;
   top: 0;
   left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   /* ff3.6+ */
   /* safari4+,chrome */
   /* safari5.1+,chrome10+ */
@@ -337,7 +341,7 @@ h6 {
 }
 
 .nav__list {
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 .nav__link {
