@@ -15,6 +15,84 @@
   padding: 14px 32px 9px 26px;
 }
 
+.usercomment-wrap {
+  max-width: 696px;
+  margin-left: auto;
+}
+
+.usercomment {
+  background-color: rgba(220, 80, 32, 0.3);
+  padding: 40px 34px 13px 0;
+  position: relative;
+  margin-bottom: 13px;
+}
+
+.usercomment__name {
+  background-image: url("../img/scotch2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #000000;
+  font-size: 18px;
+  font-weight: 700;
+  width: 367px;
+  height: 71px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.usercomment__message {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 636px;
+}
+
+.usercomment__data {
+  color: #dc5020;
+  margin-right: 3px;
+}
+
+.usercomment__about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.usercomment__image {
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.usercomment__image-dis {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.usercomment-2 .usercomment__name {
+  background-image: url("../img/scotch3.png");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -119,6 +197,14 @@ h6 {
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Hamerslag-Heavy";
+  font-display: swap;
+  src: url("../fonts/Hamerslag-Heavy.woff") format("woff"), url("../fonts/Hamerslag-Heavy.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .bar {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 36.3%;
@@ -144,7 +230,7 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url("../img/Фон2.jpg");
+  background-image: url("../img/Фон4.jpg");
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
@@ -554,6 +640,7 @@ h6 {
   background-color: rgba(220, 80, 32, 0.3);
   padding: 52px 41px 57px 61px;
   position: relative;
+  margin-bottom: 16px;
 }
 
 .comment__scotch {
@@ -709,18 +796,289 @@ h6 {
           justify-content: space-between;
 }
 
-.comment__dot label {
-  color: #000000;
-  font-size: 14px;
-  font-weight: 500;
-  margin-right: 10px;
-}
-
 .comment__dot:nth-child(2) {
   margin-top: 14px;
 }
 
-.webp .wrapper{ background-image: url(../img/Фон2.webp); }
+.books {
+  border: 3px solid #ee8985;
+  padding-top: 25px;
+  padding-bottom: 39px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.books__title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.4px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-left: 87px;
+}
+
+.books__title::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #dc5020;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.slider-book {
+  margin-left: 87px;
+  position: relative;
+  margin-top: 25px;
+  max-width: 661px;
+}
+
+.slider-book__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider-book__img {
+  margin-right: 3px;
+}
+
+.slider-book__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.books .slick-list {
+  overflow: hidden;
+}
+
+.books .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* Стрелка */
+
+.slick-arrow {
+  font-size: 0;
+  width: 29px;
+  height: 66px;
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+}
+
+/* Стрелка влево */
+
+.slick-arrow.slick-prev {
+  background-image: url("../img/arrowLeft.png");
+  left: -50px;
+}
+
+/* Стрелка вправо */
+
+.slick-arrow.slick-next {
+  background-image: url("../img/arrowRight.png");
+  right: -25px;
+}
+
+/* Стрелка не активная */
+
+.footer-wrap {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.footer__link {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.footer__link a {
+  color: #000000;
+}
+
+.footer__link span {
+  color: #dc5020;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__item:nth-child(1) {
+  margin-right: 80px;
+}
+
+.footer__email {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 36px;
+}
+
+.footer__email a {
+  color: #000000;
+  font-weight: 700;
+}
+
+.footer__socset a {
+  margin-right: 25px;
+}
+
+.footer__last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footer {
+  padding-bottom: 35px;
+  position: relative;
+}
+
+.footer__logotip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: -62px;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.footer__logtext {
+  letter-spacing: 5px;
+  color: #000000;
+  font-size: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-left: 17px;
+  font-family: "Hamerslag-Heavy";
+}
+
+.footer__name {
+  font-size: 31px;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.footer__name a {
+  color: #000000;
+}
+
+.footer__name::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: #dd0007;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.footer__username {
+  padding-top: 5px;
+  font-weight: 800;
+}
+
+.footer__username a {
+  color: #000000;
+}
+
+.footer__protect {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__logo {
+  margin-left: 10px;
+}
+
+.footer__logo span {
+  color: #000000;
+  font-family: "Handelson-SixCYR";
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.footer-wrap__two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.webp .usercomment__name{ background-image: url(../img/scotch2.webp); }
+
+.webp .usercomment-2 .usercomment__name{ background-image: url(../img/scotch3.webp); }
+
+.webp .wrapper{ background-image: url(../img/Фон4.webp); }
 
 .webp .aside__poem{ background-image: url(../img/text.webp); }
 
@@ -729,3 +1087,7 @@ h6 {
 .webp .poem{ background-image: url(../img/bgcenter.webp); }
 
 .webp .comment__scotch{ background-image: url(../img/scotch.webp); }
+
+.webp .slick-arrow.slick-prev{ background-image: url(../img/arrowLeft.webp); }
+
+.webp .slick-arrow.slick-next{ background-image: url(../img/arrowRight.webp); }
