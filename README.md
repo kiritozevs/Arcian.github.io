@@ -1,7 +1,7 @@
 # Arcian.github.io
 Root Repository
 
-  [Сайт номер 1](Arcian.github.io/WOODER/ "D") - poem
+  [Сайт номер 1](Arcian.github.io/WOODER/ "D") - poems
 
   [Сайт номер 2](Arcian.github.io/tannergoods/ "B") - магазин напитков
    
