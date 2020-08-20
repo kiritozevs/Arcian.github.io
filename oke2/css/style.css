@@ -226,6 +226,7 @@ h6 {
 }
 
 .header {
+  overflow: hidden;
   background-image: url("../img/header-bg.svg");
   background-repeat: no-repeat;
   background-size: cover;
