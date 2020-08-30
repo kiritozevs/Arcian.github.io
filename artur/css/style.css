@@ -46,6 +46,12 @@ a {
   display: inline;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -734,6 +740,136 @@ h6 {
 
 .rates-title__last a {
   text-decoration: underline;
+}
+
+.popup {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup:target .popup__content {
+  opacity: 1;
+  -webkit-transform: perspective(600px) translate(0, 0) rotateX(0deg);
+          transform: perspective(600px) translate(0, 0) rotateX(0deg);
+}
+
+.popup__body {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 30px 10px;
+}
+
+.popup__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  font-family: "ROBOTO", sans-serif;
+}
+
+.popup__content {
+  background-color: #fff;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  opacity: 0;
+  -webkit-transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+          transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.popup__area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.form__group {
+  font-size: 20px;
+  font-family: "ROBOTO", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form__control {
+  width: 300px;
+  height: 50px;
+  padding: 0 0 0 20px;
+  margin: 15px 0;
+  font-size: 17px;
+}
+
+.form__control::-webkit-input-placeholder {
+  font-size: 17px;
+}
+
+.form__control::-moz-placeholder {
+  font-size: 17px;
+}
+
+.form__control:-ms-input-placeholder {
+  font-size: 17px;
+}
+
+.form__control::-ms-input-placeholder {
+  font-size: 17px;
+}
+
+.form__control::placeholder {
+  font-size: 17px;
+}
+
+.btn-primary {
+  font-size: 20px;
+  background-color: #aae139;
+  border: none;
+  font-family: "ROBOTO", sans-serif;
+  padding: 15px 30px;
+  color: #ffffff;
+}
+
+.form-title {
+  font-family: "ROBOTO", sans-serif;
+  max-width: 300px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 20px;
 }
 
 /*		
