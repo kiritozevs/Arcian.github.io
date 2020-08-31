@@ -189,6 +189,12 @@ h6 {
 
 .nav__inner {
   background-color: #81c000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .nav__list {
@@ -198,7 +204,7 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0px 20px 65px;
+  padding: 20px 0;
 }
 
 .nav__link {
@@ -1392,8 +1398,13 @@ h6 {
 
   .nav__link {
     font-size: 14px;
-    margin-right: 15px;
+    margin-right: 10px;
     line-height: 18px;
+  }
+
+  .top .button-order {
+    padding: 12px 10px;
+    font-size: 14px;
   }
 
   .price__block img {
