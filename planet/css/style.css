@@ -426,6 +426,11 @@ h6 {
   font-weight: 400;
 }
 
+.page-section {
+  height: 100vh;
+  position: relative;
+}
+
 .header {
   font-family: sans-serif;
   /* ff3.6+ */
@@ -439,7 +444,6 @@ h6 {
   /* w3c */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4F4D57', endColorstr='#252429',GradientType=1 );
   /* ie6-9 */
-  height: 100vh;
   position: relative;
 }
 
@@ -509,16 +513,21 @@ h6 {
 }
 
 .header__title-text {
-  position: absolute;
-  left: 0;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
   right: 0;
-  top: 50px;
+  top: 0px;
+  margin-top: 30px;
 }
 
 .header__title-logo {
-  position: absolute;
-  left: 30px;
-  top: 20px;
+  margin-top: 30px;
+  position: relative;
+  left: 0px;
+  top: 0px;
 }
 
 .header__title-logo img {
@@ -527,16 +536,18 @@ h6 {
 }
 
 .header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-size: 50px;
   color: #ffffff;
-  margin: 5px 0 20px;
   text-transform: uppercase;
   text-align: center;
 }
 
 .header__item {
   width: 1200px;
-  margin-top: 150px;
+  margin-top: 20px;
   height: 420px;
   position: relative;
   display: -webkit-box;
@@ -603,6 +614,17 @@ h6 {
 .upiter .header__planet1-people img {
   width: 400px;
   height: 300px;
+}
+
+.venera .header__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/header/venera-bg.jpg");
+  background-size: cover;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  opacity: 0.1;
 }
 
 .brazzers-daddy:after {
