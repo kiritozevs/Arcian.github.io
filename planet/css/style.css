@@ -456,6 +456,8 @@ h6 {
   background-position: left bottom;
   background-repeat: no-repeat;
   opacity: 0.1;
+  left: 0;
+  top: 0;
 }
 
 .header__planet1 {
@@ -470,7 +472,7 @@ h6 {
 
 .header__planet1-people {
   position: absolute;
-  bottom: 0;
+  bottom: 10px;
   left: -400px;
   opacity: 0.5;
 }
@@ -520,11 +522,9 @@ h6 {
           transform: translateX(-100%);
   right: 0;
   top: 0px;
-  margin-top: 30px;
 }
 
 .header__title-logo {
-  margin-top: 30px;
   position: relative;
   left: 0px;
   top: 0px;
@@ -616,6 +616,17 @@ h6 {
   height: 300px;
 }
 
+.upiter .header__title-text {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  right: 0;
+  top: 0px;
+  margin: 0 auto;
+}
+
 .venera .header__bg {
   position: absolute;
   width: 100%;
@@ -625,6 +636,27 @@ h6 {
   background-position: left bottom;
   background-repeat: no-repeat;
   opacity: 0.1;
+}
+
+.venera .header__title-text {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+  right: 0;
+  top: 0px;
+  margin: 0 auto;
+}
+
+.luna .header__planet1-block2 {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: -200px;
+  right: -20px;
+  border: 2px solid orange;
+  z-index: 1;
 }
 
 .brazzers-daddy:after {
